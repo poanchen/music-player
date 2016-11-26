@@ -3,8 +3,8 @@ int left_play_btn_x;
 int left_play_btn_y;
 
 //pos for right pause button
-int pause_play_btn_x;
-int pause_play_btn_y;
+int right_pause_btn_x;
+int right_pause_btn_y;
 
 //pos for left stop button
 int left_stop_btn_x;
@@ -28,9 +28,9 @@ void drawLeftPlayButton()
 //pause button on the right
 void drawRightPauseButton()
 {
-  pause_play_btn_x = width-sizeOfButton;
-  pause_play_btn_y = 0;
-  rect(pause_play_btn_x, pause_play_btn_y, sizeOfButton, sizeOfButton);
+  right_pause_btn_x = width-sizeOfButton;
+  right_pause_btn_y = 0;
+  rect(right_pause_btn_x, right_pause_btn_y, sizeOfButton, sizeOfButton);
 }
 
 //stop button on the left
