@@ -1,1 +1,1 @@
-# music-player
+# music-player v1.0.7

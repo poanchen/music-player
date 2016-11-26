@@ -14,6 +14,10 @@ int left_stop_btn_y;
 int right_stop_btn_x;
 int right_stop_btn_y;
 
+//pos for right play button
+int right_play_btn_x;
+int right_play_btn_y;
+
 //size of button
 int sizeOfButton = 55;
 
@@ -47,4 +51,12 @@ void drawRightStopButton()
   right_stop_btn_x = width-sizeOfButton;
   right_stop_btn_y = sizeOfButton;
   rect(right_stop_btn_x, right_stop_btn_y, sizeOfButton, sizeOfButton);
+}
+
+//play button on the right
+void drawRightPlayButton()
+{
+  right_play_btn_x = width-sizeOfButton;
+  right_play_btn_y = 0;
+  rect(right_play_btn_x, right_play_btn_y, sizeOfButton, sizeOfButton);
 }
