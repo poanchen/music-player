@@ -16,8 +16,8 @@ boolean showPlayButton = false;
 void setup()
 {
   img = loadImage(bgImgName);
-  size(600, 450);//set window size
-  background(img);
+  size(560,410);//set window size
+  drawBackgroundImage();
   drawLeftPlayButton();
   drawLeftStopButton();
   file = new SoundFile(this, sketchPath(songName));
@@ -31,7 +31,7 @@ void draw()
     {
       showRightButtons(showPlayButton);
     }
-    
+      
     if(left_play_btn_pressed)
     {
       file.play();
@@ -64,7 +64,7 @@ void draw()
   }
   else
   {
-    resetAll();
+  resetAll();
   }
 }
 
@@ -79,14 +79,14 @@ void resetAll()
   }
   dur = 0.0;
   reset = false;
-  background(img);
+  drawBackgroundImage();
   drawLeftPlayButton();
   drawLeftStopButton();
 }
 
 void showRightButtons(boolean playOrPause)
 {
-  background(img);
+  drawBackgroundImage();
   if(playOrPause)
   {
     drawRightPlayButton();
