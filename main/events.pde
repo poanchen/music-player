@@ -1,3 +1,4 @@
+//global variables
 boolean left_play_btn_pressed = false;
 boolean right_play_btn_pressed = false;
 boolean right_pause_btn_pressed = false;
@@ -7,11 +8,13 @@ void mousePressed()
 {
   if(mouseButton == LEFT)
   {
+    //show left side
     if(!show)
     {
       isLeftPlayButtonPressed();
       isLeftStopButtonPressed();
     }
+    //show right side
     else
     {
       isRightPauseButtonPressed();

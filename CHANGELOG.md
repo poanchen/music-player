@@ -1,3 +1,11 @@
+v1.0.8 (2016-11-30)
+======
+
+* Added new play, pause, and reset button.
+* When the audio is playing in the background, there will be some activity at the bottom where
+the leaves will be moving to the right and wrap back if the audio is still playing. Otherwise, it
+will simply disappear.
+
 v1.0.7 (2016-11-25)
 ======
 
